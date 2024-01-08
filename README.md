@@ -1,3 +1,13 @@
+# Quicket
+
+Creating a program aimed at generating tickets for a concert involves implementing various key functionalities. These include a login system, the ability to process payments for tickets, setting a time limit for completing the purchase, and notifying the user if tickets are sold out before the established time. Additionally, the program must handle different ticket classes (such as VIP), record the sale date of each ticket, and establish a maximum 48-hour window for canceling the purchase, with the corresponding refund to the user and recording the cancellation date.
+
+To ensure a fair experience, it is necessary to limit users to a maximum of 5 tickets. Furthermore, a section will be implemented for receiving feedback on the ticket generator, aiming to collect input and continuously improve the application. Additionally, access to the user's account will be tracked.
+
+As the application focuses on musical events, it is essential to have features that allow adding different types of artists who will perform, each with a limited number of available tickets. This feature adds an additional element of management and planning to ensure proper distribution of tickets among various artists and event types.
+
+ ---
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
