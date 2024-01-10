@@ -8,5 +8,6 @@ export class User {
   @Column()
   first_name: string;
 
+  
 
 }
