@@ -6,7 +6,7 @@ To ensure a fair experience, it is necessary to limit users to a maximum of 5 ti
 
 As the application focuses on musical events, it is essential to have features that allow adding different types of artists who will perform, each with a limited number of available tickets. This feature adds an additional element of management and planning to ensure proper distribution of tickets among various artists and event types.
 
- ---
+---
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
