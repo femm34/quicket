@@ -7,5 +7,5 @@ export class Ticket {
   private ticket_id: number;
 
   @Column()
-  private price: Big;
+  private price: number;
 }

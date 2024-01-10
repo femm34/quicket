@@ -1,4 +1,8 @@
-import { Entity } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'uesr_has_ticket' })
-export class UserHasTicket {}
+@Entity({ name: 'user_has_ticket' })
+export class UserHasTicket {
+
+  @PrimaryGeneratedColumn()
+  private id:number;
+}
