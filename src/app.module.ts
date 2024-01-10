@@ -11,17 +11,7 @@ import { TypeEventModule } from './type_event/type_event.module';
 import { UserHasTicketModule } from './user-has-ticket/user-has-ticket.module';
 
 @Module({
-  imports: [
-    
-    TicketModule,
-    EventsModule,
-    CanceledTicketsModule,
-    TypeEventModule,
-    FeedbacksModule,
-    UserHasTicketModule,
-    SignInDetailsModule,
-    TypeTicketModule,
-  ],
+  imports: [],
   controllers: [AppController],
   providers: [AppService],
 })
