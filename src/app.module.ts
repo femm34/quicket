@@ -9,12 +9,10 @@ import { TicketModule } from './ticket/ticket.module';
 import { TypeTicketModule } from './type-ticket/type-ticket.module';
 import { TypeEventModule } from './type_event/type_event.module';
 import { UserHasTicketModule } from './user-has-ticket/user-has-ticket.module';
-import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
     
-    UsersModule,
     TicketModule,
     EventsModule,
     CanceledTicketsModule,
