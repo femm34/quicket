@@ -1,3 +1,4 @@
+import { CanceledTicket } from 'src/canceled_tickets/entities/canceled_ticket.entity';
 import { Ticket } from 'src/ticket/entities/ticket.entity';
 import {
   Entity,
@@ -5,6 +6,7 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
+  OneToMany,
   ManyToMany,
   JoinTable,
 } from 'typeorm';
@@ -38,4 +40,9 @@ export class User {
 
   @UpdateDateColumn()
   updated_at: Date;
+
+  // Test this, if not works just change it or delete it
+  @OneToMany(() => CanceledTicket, (canceledTickets) => canceledTickets.user)
+  canceledTickets: CanceledTicket[];
+
 }
