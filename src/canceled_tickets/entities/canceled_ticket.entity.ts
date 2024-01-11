@@ -2,9 +2,7 @@ import { User } from 'src/users/entities/user.entity';
 import {
   Column,
   Entity,
-  ManyToMany,
   ManyToOne,
-  PrimaryColumn,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
