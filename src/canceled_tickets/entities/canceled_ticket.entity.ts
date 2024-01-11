@@ -17,11 +17,10 @@ export class CanceledTicket {
   @UpdateDateColumn()
   private date: Date;
 
-  @Column()
+  @Column({ default: false })
   private status: boolean;
 
   // Test this, if not works just change it or delete it
   @ManyToOne(() => User, (user) => user.canceledTickets)
   user: User;
 }
-  
