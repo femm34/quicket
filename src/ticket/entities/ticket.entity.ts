@@ -7,6 +7,8 @@ import {
 } from 'typeorm';
 import { Event } from 'src/events/entities/event.entity';
 import { TypeTicket } from 'src/type-ticket/entities/type-ticket.entity';
+
+
 @Entity({ name: 'ticket' })
 export class Ticket {
   @PrimaryGeneratedColumn()
