@@ -1,9 +1,12 @@
+import { Ticket } from 'src/ticket/entities/ticket.entity';
 import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
+  ManyToMany,
+  JoinTable,
 } from 'typeorm';
 
 @Entity()
@@ -25,6 +28,10 @@ export class User {
 
   @Column()
   max_tickets_purchase: string;
+
+  @ManyToMany(() => Ticket)
+  @JoinTable()
+  has: Ticket;
 
   @CreateDateColumn()
   created_at: Date;

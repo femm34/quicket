@@ -13,7 +13,7 @@ import { TicketModule } from './ticket/ticket.module';
 import { TypeEvent } from './type_event/entities/type_event.entity';
 import { TypeEventModule } from './type_event/type_event.module';
 import { TypeTicketModule } from './type-ticket/type-ticket.module';
-import { UserHasTicketModule } from './user-has-ticket/user-has-ticket.module';
+// import { UserHasTicketModule } from './user-has-ticket/user-has-ticket.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
@@ -39,10 +39,10 @@ import { UsersModule } from './users/users.module';
     TicketModule,
     TypeEventModule,
     TypeTicketModule,
-    UserHasTicketModule,
+    // UserHasTicketModule,
     UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
